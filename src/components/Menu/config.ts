@@ -55,11 +55,11 @@ const config: MenuEntry[] = [
       },
       {
         label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/goose-finance',
+        href: 'https://www.coingecko.com/en/coins/lucky-financial',
       },
       {
         label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/goose-finance/',
+        href: 'https://coinmarketcap.com/currencies/lucky-financial/',
       },
       {
         label: 'AstroTools',
@@ -81,7 +81,7 @@ const config: MenuEntry[] = [
       },
       {
         label: "Docs",
-        href: "https://goosedefi.gitbook.io/goose-finance/",
+        href: "https://goosedefi.gitbook.io/lucky-financial/",
       },
       {
         label: "Blog",
