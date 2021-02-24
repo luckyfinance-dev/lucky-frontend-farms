@@ -29,7 +29,7 @@ const CakeStats = () => {
   const farms = useFarms();
   const GFTPrice = usePriceCakeBusd();
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
-  const cakeSupply = getBalanceNumber(circSupply);
+  const gftSupply = getBalanceNumber(circSupply);
   const marketCap = GFTPrice.times(circSupply);
 
   let GFTPerBlock = 0;
@@ -45,7 +45,7 @@ const CakeStats = () => {
         </Heading>
         <Row>
           <Text fontSize="14px">{TranslateString(536, 'Total GFT Supply')}</Text>
-          {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} decimals={0} />}
+          {gftSupply && <CardValue fontSize="14px" value={gftSupply} decimals={0} />}
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(999, 'Market Cap')}</Text>
