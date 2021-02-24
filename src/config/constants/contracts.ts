@@ -28,3 +28,4 @@ export default {
     97: '',
   },
 }
+//bsc-wallets
