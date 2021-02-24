@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'http://exchange.goosedefi.com/',
+        href: 'http://exchange.lucky.financial/',
       },
       {
         label: 'Liquidity',
-        href: 'http://exchange.goosedefi.com/#/pool',
+        href: 'http://exchange.lucky.financial/#/pool',
       },
     ],
   },
@@ -73,26 +73,26 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Audit by Hacken',
-        href: 'https://www.goosedefi.com/files/hackenAudit.pdf',
+        href: 'https://www.lucky.financial/files/hackenAudit.pdf',
       },
       {
         label: "Github",
-        href: "https://github.com/goosedefi/",
+        href: "https://github.com/luckyfinance-dev/",
       },
       {
         label: "Docs",
-        href: "https://goosedefi.gitbook.io/lucky-financial/",
+        href: "https://lucky-financial.gitbook.io/lucky-financial/",
       },
       {
         label: "Blog",
-        href: "https://goosefinance.medium.com/",
+        href: "https://medium.com/@luckyfinancial",
       },
     ],
   },
   {
     label: 'Audit by Hacken',
     icon: 'AuditIcon',
-    href: 'https://www.goosedefi.com/files/hackenAudit.pdf',
+    href: 'https://www.lucky.financial/files/hackenAudit.pdf',
   },
 ]
 
