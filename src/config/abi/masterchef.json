@@ -2,8 +2,8 @@
   {
     "inputs": [
       {
-        "internalType": "contract EggToken",
-        "name": "_egg",
+        "internalType": "contract GFToken",
+        "name": "_GFT",
         "type": "address"
       },
       {
@@ -18,7 +18,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_eggPerBlock",
+        "name": "_GFTPerBlock",
         "type": "uint256"
       },
       {
@@ -154,10 +154,10 @@
   },
   {
     "inputs": [],
-    "name": "egg",
+    "name": "GFT",
     "outputs": [
       {
-        "internalType": "contract EggToken",
+        "internalType": "contract GFToken",
         "name": "",
         "type": "address"
       }
@@ -168,7 +168,7 @@
   },
   {
     "inputs": [],
-    "name": "eggPerBlock",
+    "name": "GFTPerBlock",
     "outputs": [
       {
         "internalType": "uint256",
@@ -235,7 +235,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "accEggPerShare",
+        "name": "accGFTPerShare",
         "type": "uint256"
       },
       {
@@ -434,7 +434,7 @@
         "type": "address"
       }
     ],
-    "name": "pendingEgg",
+    "name": "pendingGFT",
     "outputs": [
       {
         "internalType": "uint256",
@@ -545,7 +545,7 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_eggPerBlock",
+        "name": "_GFTPerBlock",
         "type": "uint256"
       }
     ],
