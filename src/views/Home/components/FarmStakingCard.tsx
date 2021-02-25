@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
-import { Heading, Card, CardBody, Button } from '@pancakeswap-libs/uikit'
+import { Heading, Card, CardBody, Button, Image } from '@pancakeswap-libs/uikit'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import BigNumber from 'bignumber.js'
 import useI18n from 'hooks/useI18n'
@@ -24,15 +24,20 @@ const StyledFarmStakingCard = styled(Card)`
 
 const Block = styled.div`
   margin-bottom: 16px;
+  align:left;
+  max-width:150px;
+  min-width:100px;
 `
 
 const CardImage = styled.img`
-  margin-bottom: 16px;
+  float:right;
+  margin-right:98px;
+  margin-bottom:32px;
 `
 
 const Label = styled.div`
   color: ${({ theme }) => theme.colors.textSubtle};
-  font-size: 14px;
+  font-size: 22px;
 `
 
 const Actions = styled.div`
@@ -71,7 +76,7 @@ const FarmedStakingCard = () => {
         <Heading size="xl" mb="24px">
           {TranslateString(542, 'Farms & Staking')}
         </Heading>
-        <CardImage src="/images/gft/2.png" alt="cake logo" width={64} height={64} />
+        <CardImage src="/images/gft/gft-ribbon.png" alt="gft coin logo" width={100} height={130} />
         <Block>
           <Label>{TranslateString(544, 'GFT to Harvest')}</Label>
           <CakeHarvestBalance earningsSum={earningsSum}/>

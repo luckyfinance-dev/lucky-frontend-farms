@@ -13,11 +13,16 @@ const StyledCakeStats = styled(Card)`
   margin-left: auto;
   margin-right: auto;
 `
+const CardImage = styled.img`
+align-items: center;
+margin-top:55px;
+margin-left:15px;
+`
 
 const Row = styled.div`
   align-items: center;
   display: flex;
-  font-size: 14px;
+  font-size: 22px;
   justify-content: space-between;
   margin-bottom: 8px;
 `
@@ -44,21 +49,22 @@ const CakeStats = () => {
           {TranslateString(534, 'GFT Stats')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{TranslateString(536, 'Total GFT Supply')}</Text>
-          {gftSupply && <CardValue fontSize="14px" value={gftSupply} decimals={0} />}
+          <Text fontSize="18px">{TranslateString(536, 'Total GFT Supply')}</Text>
+          {gftSupply && <CardValue fontSize="20px" value={gftSupply} decimals={0} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(999, 'Market Cap')}</Text>
-          <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" />
+          <Text fontSize="18px">{TranslateString(999, 'Market Cap')}</Text>
+          <CardValue fontSize="20px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" />
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(538, 'Total GFT Burned')}</Text>
-          <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} decimals={0} />
+          <Text fontSize="18px">{TranslateString(538, 'Total GFT Burned')}</Text>
+          <CardValue fontSize="20px" value={getBalanceNumber(burnedBalance)} decimals={0} />
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(540, 'New GFT/block')}</Text>
-          <Text bold fontSize="14px">{GFTPerBlock}</Text>
+          <Text fontSize="18px">{TranslateString(540, 'New GFT/block')}</Text>
+          <Text bold fontSize="20px">{GFTPerBlock}</Text>
         </Row>
+        <CardImage src="/images/gft/gft-gold.png" alt="gft coin logo" width={120} height={100} />
       </CardBody>
     </StyledCakeStats>
   )
