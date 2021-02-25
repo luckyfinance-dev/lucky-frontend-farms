@@ -10,22 +10,21 @@ import TotalValueLockedCard from './components/TotalValueLockedCard'
 import TwitterCard from './components/TwitterCard'
 
 const Hero = styled.div`
-  align-items: center;
-  background-image: url('/images/gft/3.png');
+  align-items: left;
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  margin-bottom: 32px;
-  padding-top: 116px;
-  text-align: center;
+  margin-bottom: 36px;
+  padding-top: 286px;
+  text-align: left;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/gft/3.png'), url('/images/gft/3b.png');
-    background-position: left center, right center;
-    height: 165px;
+    background-image: url('/images/gft/3b.png');
+    background-position: right center;
+    height: 286px;
     padding-top: 0;
   }
 `
@@ -59,7 +58,7 @@ const Home: React.FC = () => {
   return (
     <Page>
       <Hero>
-        <Heading as="h1" size="xl" mb="24px" color="secondary">
+        <Heading as="h1" size="xxl" mb="24px" color="secondary">
           {TranslateString(576, 'Lucky Financial - Good Fortune Token (GFT)')}
         </Heading>
         <Text>{TranslateString(578, 'The best rewards - DEFI app on Binance Smart Chain.')}</Text>
