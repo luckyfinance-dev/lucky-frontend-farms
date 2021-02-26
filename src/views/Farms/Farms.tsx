@@ -1,10 +1,11 @@
 import React, { useEffect, useCallback } from 'react'
+import styled from 'styled-components'
 import { Route, useRouteMatch } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import BigNumber from 'bignumber.js'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { provider } from 'web3-core'
-import { Image, Heading } from '@pancakeswap-libs/uikit'
+import { Image, Heading, Text } from '@pancakeswap-libs/uikit'
 import { BLOCKS_PER_YEAR, CAKE_PER_BLOCK, CAKE_POOL_PID } from 'config'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
@@ -16,6 +17,7 @@ import useI18n from 'hooks/useI18n'
 import FarmCard, { FarmWithStakedValue } from './components/FarmCard/FarmCard'
 import FarmTabButtons from './components/FarmTabButtons'
 import Divider from './components/Divider'
+
 
 export interface FarmsProps{
   tokenMode?: boolean
@@ -40,6 +42,27 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   const activeFarms = farmsLP.filter((farm) => !!farm.isTokenOnly === !!tokenMode && farm.multiplier !== '0X')
   const inactiveFarms = farmsLP.filter((farm) => !!farm.isTokenOnly === !!tokenMode && farm.multiplier === '0X')
+
+  const Hero = styled.div`
+  align-items: left;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 14px;
+  padding-top: 350px;
+  text-align: left;
+
+  ${({ theme }) => theme.mediaQueries.lg} {
+    background-image: url('/images/gft/lucky-pose-left.png');
+    background-size: 350px;
+    background-position: right center;
+    height: 350px;
+    padding-top: 0;
+  }
+`
 
   // /!\ This function will be removed soon
   // This function compute the APY for each farm and will be replaced when we have a reliable API
@@ -85,7 +108,8 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   return (
     <Page>
-      <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
+        <Hero>
+        <Heading as="h1" size="xl" color="primary" mb="50px" style={{ textAlign: 'left' }}>
         {
           tokenMode ?
             TranslateString(10002, 'Stake tokens to earn GFT')
@@ -93,9 +117,11 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           TranslateString(320, 'Stake LP tokens to earn GFT')
         }
       </Heading>
-      <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
+      <Heading as="h2" size="lg" color="secondary" mb="35px" style={{ textAlign: 'left' }}>
         {TranslateString(10000, 'Deposit Fee will be used to buyback GFT')}
       </Heading>
+      <Text>{TranslateString(10004, 'Adding to the BIGBANG Lottery Pool, and 20% Burn.')}</Text>
+      </Hero>
       <FarmTabButtons />
       <div>
         <Divider />

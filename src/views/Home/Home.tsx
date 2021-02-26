@@ -17,7 +17,7 @@ const Hero = styled.div`
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  margin-bottom: 36px;
+  margin-bottom: 55px;
   padding-top: 286px;
   text-align: left;
 
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <Heading as="h1" size="xxl" mb="24px" color="secondary">
-          {TranslateString(576, 'Lucky Financial - Good Fortune Token (GFT)')}
+          {TranslateString(576, 'Lucky Financial')}
         </Heading>
         <Text>{TranslateString(578, 'The best rewards - DEFI app on Binance Smart Chain. Home of the BIGBANG Lottery!')}</Text>
       </Hero>

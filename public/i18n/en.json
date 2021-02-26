@@ -1224,6 +1224,12 @@
         "text": "Announcements"
       }
     }
+    {
+      "data": {
+        "stringId": 10004,
+        "text": "Adding to the BIGBANG Lottery Pool, and 20% Burn."
+      }
+    }
   ],
   "pagination": {
     "offset": 0,

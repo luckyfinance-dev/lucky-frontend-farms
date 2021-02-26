@@ -31,8 +31,8 @@ const Block = styled.div`
 
 const CardImage = styled.img`
   float:right;
-  margin-right:98px;
-  margin-bottom:32px;
+  margin-right:80px;
+  margin-bottom:26px;
 `
 
 const Label = styled.div`
@@ -76,7 +76,7 @@ const FarmedStakingCard = () => {
         <Heading size="xl" mb="24px">
           {TranslateString(542, 'Farms & Staking')}
         </Heading>
-        <CardImage src="/images/gft/gft-ribbon.png" alt="gft coin logo" width={100} height={130} />
+        <CardImage src="/images/gft/gft-ribbon.png" alt="gft coin logo" width={126} height={130} />
         <Block>
           <Label>{TranslateString(544, 'GFT to Harvest')}</Label>
           <CakeHarvestBalance earningsSum={earningsSum}/>

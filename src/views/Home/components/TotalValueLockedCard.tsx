@@ -10,6 +10,10 @@ const StyledTotalValueLockedCard = styled(Card)`
   align-items: center;
   display: flex;
   flex: 1;
+  background-image: url('/images/gft/2a.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  min-height: 376px;
 `
 
 const TotalValueLockedCard = () => {
