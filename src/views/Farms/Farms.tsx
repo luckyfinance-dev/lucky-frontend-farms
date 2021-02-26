@@ -18,8 +18,7 @@ import FarmCard, { FarmWithStakedValue } from './components/FarmCard/FarmCard'
 import FarmTabButtons from './components/FarmTabButtons'
 import Divider from './components/Divider'
 
-
-export interface FarmsProps{
+export interface FarmsProps {
   tokenMode?: boolean
 }
 
@@ -30,7 +29,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const cakePrice = usePriceCakeBusd()
   const bnbPrice = usePriceBnbBusd()
   const { account, ethereum }: { account: string; ethereum: provider } = useWallet()
-  const {tokenMode} = farmsProps;
+  const { tokenMode } = farmsProps
 
   const dispatch = useDispatch()
   const { fastRefresh } = useRefresh()
@@ -44,25 +43,25 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const inactiveFarms = farmsLP.filter((farm) => !!farm.isTokenOnly === !!tokenMode && farm.multiplier === '0X')
 
   const Hero = styled.div`
-  align-items: left;
-  background-repeat: no-repeat;
-  background-position: top center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: auto;
-  margin-bottom: 14px;
-  padding-top: 350px;
-  text-align: left;
+    align-items: left;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 14px;
+    padding-top: 350px;
+    text-align: left;
 
-  ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/gft/lucky-pose-left.png');
-    background-size: 350px;
-    background-position: right center;
-    height: 350px;
-    padding-top: 0;
-  }
-`
+    ${({ theme }) => theme.mediaQueries.lg} {
+      background-image: url('/images/gft/lucky-pose-left.png');
+      background-size: 350px;
+      background-position: right center;
+      height: 350px;
+      padding-top: 0;
+    }
+  `
 
   // /!\ This function will be removed soon
   // This function compute the APY for each farm and will be replaced when we have a reliable API
@@ -74,19 +73,21 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         // if (!farm.tokenAmount || !farm.lpTotalInQuoteToken || !farm.lpTotalInQuoteToken) {
         //   return farm
         // }
-        const cakeRewardPerBlock = new BigNumber(farm.GFTPerBlock || 1).times(new BigNumber(farm.poolWeight)) .div(new BigNumber(10).pow(18))
+        const cakeRewardPerBlock = new BigNumber(farm.GFTPerBlock || 1)
+          .times(new BigNumber(farm.poolWeight))
+          .div(new BigNumber(10).pow(18))
         const cakeRewardPerYear = cakeRewardPerBlock.times(BLOCKS_PER_YEAR)
 
-        let apy = cakePrice.times(cakeRewardPerYear);
+        let apy = cakePrice.times(cakeRewardPerYear)
 
-        let totalValue = new BigNumber(farm.lpTotalInQuoteToken || 0);
+        let totalValue = new BigNumber(farm.lpTotalInQuoteToken || 0)
 
         if (farm.quoteTokenSymbol === QuoteToken.BNB) {
-          totalValue = totalValue.times(bnbPrice);
+          totalValue = totalValue.times(bnbPrice)
         }
 
-        if(totalValue.comparedTo(0) > 0){
-          apy = apy.div(totalValue);
+        if (totalValue.comparedTo(0) > 0) {
+          apy = apy.div(totalValue)
         }
 
         return { ...farm, apy }
@@ -108,19 +109,16 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   return (
     <Page>
-        <Hero>
+      <Hero>
         <Heading as="h1" size="xl" color="primary" mb="50px" style={{ textAlign: 'left' }}>
-        {
-          tokenMode ?
-            TranslateString(10002, 'Stake tokens to earn GFT')
-            :
-          TranslateString(320, 'Stake LP tokens to earn GFT')
-        }
-      </Heading>
-      <Heading as="h2" size="lg" color="secondary" mb="35px" style={{ textAlign: 'left' }}>
-        {TranslateString(10000, 'Deposit Fee will be used to buyback GFT')}
-      </Heading>
-      <Text>{TranslateString(10004, 'Adding to the BIGBANG Lottery Pool, and 20% GFT Burn.')}</Text>
+          {tokenMode
+            ? TranslateString(10002, 'Stake tokens to earn GFT')
+            : TranslateString(320, 'Stake LP tokens to earn GFT')}
+        </Heading>
+        <Heading as="h2" size="lg" color="secondary" mb="35px" style={{ textAlign: 'left' }}>
+          {TranslateString(10000, 'Deposit Fee will be used to buyback GFT')}
+        </Heading>
+        <Text>{TranslateString(10004, 'Adding to the BIGBANG Lottery Pool, and 20% GFT Burn.')}</Text>
       </Hero>
       <FarmTabButtons />
       <div>

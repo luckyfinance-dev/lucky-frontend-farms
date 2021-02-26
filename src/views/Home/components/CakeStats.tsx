@@ -14,9 +14,9 @@ const StyledCakeStats = styled(Card)`
   margin-right: auto;
 `
 const CardImage = styled.img`
-align-items: center;
-margin-top:55px;
-margin-left:15px;
+  align-items: center;
+  margin-top: 55px;
+  margin-left: 15px;
 `
 
 const Row = styled.div`
@@ -31,15 +31,15 @@ const CakeStats = () => {
   const TranslateString = useI18n()
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getCakeAddress())
-  const farms = useFarms();
-  const GFTPrice = usePriceCakeBusd();
-  const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
-  const gftSupply = getBalanceNumber(circSupply);
-  const marketCap = GFTPrice.times(circSupply);
+  const farms = useFarms()
+  const GFTPrice = usePriceCakeBusd()
+  const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0)
+  const gftSupply = getBalanceNumber(circSupply)
+  const marketCap = GFTPrice.times(circSupply)
 
-  let GFTPerBlock = 0;
-  if(farms && farms[0] && farms[0].GFTPerBlock){
-    GFTPerBlock = new BigNumber(farms[0].GFTPerBlock).div(new BigNumber(10).pow(18)).toNumber();
+  let GFTPerBlock = 0
+  if (farms && farms[0] && farms[0].GFTPerBlock) {
+    GFTPerBlock = new BigNumber(farms[0].GFTPerBlock).div(new BigNumber(10).pow(18)).toNumber()
   }
 
   return (
@@ -62,7 +62,9 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text fontSize="18px">{TranslateString(540, 'New GFT/block')}</Text>
-          <Text bold fontSize="20px">{GFTPerBlock}</Text>
+          <Text bold fontSize="20px">
+            {GFTPerBlock}
+          </Text>
         </Row>
         <CardImage src="/images/gft/gft-gold.png" alt="gft coin logo" width={120} height={100} />
       </CardBody>

@@ -24,15 +24,15 @@ const StyledFarmStakingCard = styled(Card)`
 
 const Block = styled.div`
   margin-bottom: 16px;
-  align:left;
-  max-width:150px;
-  min-width:100px;
+  align: left;
+  max-width: 150px;
+  min-width: 100px;
 `
 
 const CardImage = styled.img`
-  float:right;
-  margin-right:80px;
-  margin-bottom:26px;
+  float: right;
+  margin-right: 80px;
+  margin-bottom: 26px;
 `
 
 const Label = styled.div`
@@ -79,7 +79,7 @@ const FarmedStakingCard = () => {
         <CardImage src="/images/gft/gft-ribbon.png" alt="gft coin logo" width={126} height={130} />
         <Block>
           <Label>{TranslateString(544, 'GFT to Harvest')}</Label>
-          <CakeHarvestBalance earningsSum={earningsSum}/>
+          <CakeHarvestBalance earningsSum={earningsSum} />
           <Label>~${(GFTPrice * earningsSum).toFixed(2)}</Label>
         </Block>
         <Block>

@@ -61,13 +61,15 @@ const Home: React.FC = () => {
         <Heading as="h1" size="xxl" mb="24px" color="secondary">
           {TranslateString(576, 'Lucky Financial')}
         </Heading>
-        <Text>{TranslateString(578, 'The best rewards - DEFI app on Binance Smart Chain. Home of the BIGBANG Lottery!')}</Text>
+        <Text>
+          {TranslateString(578, 'The best rewards - DEFI app on Binance Smart Chain. Home of the BIGBANG Lottery!')}
+        </Text>
       </Hero>
       <div>
         <Cards>
           <FarmStakingCard />
           <CakeStats />
-          <TwitterCard/>
+          <TwitterCard />
           <TotalValueLockedCard />
         </Cards>
       </div>

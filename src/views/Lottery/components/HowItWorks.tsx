@@ -37,14 +37,15 @@ const HowItWorks = () => {
           999,
           'Spend GFT to buy tickets, contributing to the lottery pot. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their exact order!',
         )}
-      </Text><br/>
-      <Text fontSize="15px">
-        {TranslateString(
-          9991,
-          'A % of each lottery gets burned prior to the draw.',
-        )}
       </Text>
-      <StyledLink href="https://lucky-financial.gitbook.io/lucky-financial/big-bang-lotter/lottery-overview" target="_blank">Read more</StyledLink>
+      <br />
+      <Text fontSize="15px">{TranslateString(9991, 'A % of each lottery gets burned prior to the draw.')}</Text>
+      <StyledLink
+        href="https://lucky-financial.gitbook.io/lucky-financial/big-bang-lotter/lottery-overview"
+        target="_blank"
+      >
+        Read more
+      </StyledLink>
     </LayoutWrapper>
   )
 }

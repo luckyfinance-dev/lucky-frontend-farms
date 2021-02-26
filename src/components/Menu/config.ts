@@ -35,11 +35,11 @@ const config: MenuEntry[] = [
   //   icon: 'PoolIcon',
   //   href: '/pools',
   // },
- {
+  {
     label: 'BigBang Lottery',
     icon: 'TicketIcon',
     href: '/lottery',
- },
+  },
   // {
   //   label: 'NFT',
   //   icon: 'NftIcon',
@@ -72,24 +72,24 @@ const config: MenuEntry[] = [
     icon: 'MoreIcon',
     items: [
       {
-        label: "Github",
-        href: "https://github.com/luckyfinance-dev/",
+        label: 'Github',
+        href: 'https://github.com/luckyfinance-dev/',
       },
       {
-        label: "Docs",
-        href: "https://lucky-financial.gitbook.io/lucky-financial/",
+        label: 'Docs',
+        href: 'https://lucky-financial.gitbook.io/lucky-financial/',
       },
       {
-        label: "Blog",
-        href: "https://medium.com/@luckyfinancial",
+        label: 'Blog',
+        href: 'https://medium.com/@luckyfinancial',
       },
     ],
   },
-//  {
-//    label: 'Audit by Hacken',
-//    icon: 'AuditIcon',
-//    href: 'https://www.lucky.financial/files/',
-//  },
+  //  {
+  //    label: 'Audit by Hacken',
+  //    icon: 'AuditIcon',
+  //    href: 'https://www.lucky.financial/files/',
+  //  },
 ]
 
 export default config

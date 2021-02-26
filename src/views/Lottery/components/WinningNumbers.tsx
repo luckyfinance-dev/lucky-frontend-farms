@@ -21,12 +21,8 @@ const WinningNumbers: React.FC = () => {
         <CardBody>
           <StyledCardContentInner>
             <StyledCardHeader>
-            <Text fontSize="30px">
-        {TranslateString(
-          999,
-          'DAILY BIG BANG LOTTERY!',
-        )}
-      </Text><br/>
+              <Text fontSize="30px">{TranslateString(999, 'DAILY BIG BANG LOTTERY!')}</Text>
+              <br />
               <Title>
                 {account && lotteryHasDrawn
                   ? `🥳${TranslateString(570, 'Winning Numbers This Round')}🥳`
@@ -50,17 +46,17 @@ const WinningNumbers: React.FC = () => {
               </RabbitBox>
               <RabbitBox>
                 <CardImage style={{ marginLeft: '-1.2em' }}>
-                <Image src="/images/sign bunny 1@2x.png" alt="Number 1" width={200} height={150} responsive />
+                  <Image src="/images/sign bunny 1@2x.png" alt="Number 1" width={200} height={150} responsive />
                 </CardImage>
               </RabbitBox>
               <RabbitBox>
                 <CardImage style={{ marginLeft: '-1.2em' }}>
-                <Image src="/images/sign bunny 1@2x.png" alt="Number 1" width={200} height={150} responsive />
+                  <Image src="/images/sign bunny 1@2x.png" alt="Number 1" width={200} height={150} responsive />
                 </CardImage>
               </RabbitBox>
               <RabbitBox>
                 <CardImage style={{ marginLeft: '-1.2em' }}>
-                <Image src="/images/sign bunny 1@2x.png" alt="Number 1" width={200} height={150} responsive />
+                  <Image src="/images/sign bunny 1@2x.png" alt="Number 1" width={200} height={150} responsive />
                 </CardImage>
               </RabbitBox>
             </RabbitRow>
