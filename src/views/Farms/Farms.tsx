@@ -120,7 +120,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
       <Heading as="h2" size="lg" color="secondary" mb="35px" style={{ textAlign: 'left' }}>
         {TranslateString(10000, 'Deposit Fee will be used to buyback GFT')}
       </Heading>
-      <Text>{TranslateString(10004, 'Adding to the BIGBANG Lottery Pool, and 20% Burn.')}</Text>
+      <Text>{TranslateString(10004, 'Adding to the BIGBANG Lottery Pool, and 20% GFT Burn.')}</Text>
       </Hero>
       <FarmTabButtons />
       <div>
