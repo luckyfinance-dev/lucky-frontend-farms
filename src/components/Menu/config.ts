@@ -88,7 +88,7 @@ const config: MenuEntry[] = [
   //  {
   //    label: 'Audit by Hacken',
   //    icon: 'AuditIcon',
-  //    href: 'https://www.lucky.financial/files/',
+  //    href: 'https://lucky.financial/files/',
   //  },
 ]
 
