@@ -41,7 +41,7 @@ const HowItWorks = () => {
       <br />
       <Text fontSize="15px">{TranslateString(9991, 'A % of each lottery gets burned prior to the draw.')}</Text>
       <StyledLink
-        href="https://lucky-financial.gitbook.io/lucky-financial/big-bang-lotter/lottery-overview"
+        href="https://docs.lucky.financial/big-bang-lotter/lottery-overview"
         target="_blank"
       >
         Read more

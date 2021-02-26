@@ -77,7 +77,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: 'https://lucky-financial.gitbook.io/lucky-financial/',
+        href: 'https://docs.lucky.financial',
       },
       {
         label: 'Blog',
