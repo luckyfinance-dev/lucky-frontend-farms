@@ -27,7 +27,7 @@ const config: MenuEntry[] = [
   },
   {
     label: 'Fortunes',
-    icon: 'PoolIcon',
+    icon: 'SunIcon',
     href: '/fortunes',
   },
   // {
