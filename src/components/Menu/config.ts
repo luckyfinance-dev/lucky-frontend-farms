@@ -35,11 +35,11 @@ const config: MenuEntry[] = [
   //   icon: 'PoolIcon',
   //   href: '/pools',
   // },
-  // {
-  //   label: 'Lottery',
-  //   icon: 'TicketIcon',
-  //   href: '/lottery',
-  // },
+ {
+    label: 'BigBang Lottery',
+    icon: 'TicketIcon',
+    href: '/lottery',
+ },
   // {
   //   label: 'NFT',
   //   icon: 'NftIcon',
@@ -88,7 +88,7 @@ const config: MenuEntry[] = [
 //  {
 //    label: 'Audit by Hacken',
 //    icon: 'AuditIcon',
-//    href: 'https://www.lucky.financial/files/hackenAudit.pdf',
+//    href: 'https://www.lucky.financial/files/',
 //  },
 ]
 

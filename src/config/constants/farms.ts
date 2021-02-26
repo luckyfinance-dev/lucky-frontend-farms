@@ -263,6 +263,23 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
+    pid: 25,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'BAKE',
+    lpAddresses: {
+      97: '',
+      56: '0x4d0228ebeb39f6d2f29ba528e2d15fc9121ead56', // BAKE-BNB LP - EDIT
+    },
+    tokenSymbol: 'BAKE',
+    tokenAddresses: {
+      97: '',
+      56: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
     pid: 16,
     risk: 2,
     isTokenOnly: true,
