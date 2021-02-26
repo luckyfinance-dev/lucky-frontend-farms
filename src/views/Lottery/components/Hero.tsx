@@ -73,7 +73,7 @@ const Hero = () => {
           <Title>{TranslateString(999, 'The BIGBANG - Good Fortune Lottery')}</Title>
           <Blurb>{TranslateString(999, 'Buy tickets with GFT')}</Blurb>
           <Blurb>{TranslateString(999, 'Win if 2, 3, or 4 of your ticket numbers match!')}</Blurb>
-          <Blurb>{TranslateString(999, 'Daily, Monthly and Hearly Big Bangs!')}</Blurb>
+          <Blurb>{TranslateString(999, 'Daily, Monthly and Yearly Big Bangs!')}</Blurb>
         </LeftWrapper>
         <RightWrapper>
           <LotteryProgress />
