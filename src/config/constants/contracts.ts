@@ -28,7 +28,7 @@ export default {
     97: '',
   },
   bake: {
-    56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+    56: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5',
     97: '',
   },
 }
