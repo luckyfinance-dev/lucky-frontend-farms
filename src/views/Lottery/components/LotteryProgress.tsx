@@ -48,7 +48,7 @@ const LotteryProgress = () => {
         <StyledPrimaryText fontSize="20px" bold color="contrast">
           {lotteryHasDrawn ? timeUntilTicketSale : timeUntilLotteryDraw}
         </StyledPrimaryText>
-        <Text fontSize="20px" bold color="invertedContrast">
+        <Text fontSize="20px" bold color="Contrast">
           {lotteryHasDrawn ? TranslateString(0, 'Until ticket sale') : TranslateString(0, 'Until lottery draw')}
         </Text>
       </TopTextWrapper>

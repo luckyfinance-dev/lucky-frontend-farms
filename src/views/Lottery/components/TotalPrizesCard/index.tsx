@@ -64,7 +64,7 @@ const TotalPrizesCard = () => {
             {currentLotteryNumber === 0 && <Skeleton height={20} width={56} />}
             {currentLotteryNumber > 0 && (
               <>
-                <Text fontSize="12px" style={{ fontWeight: 600 }}>{`Round #${currentLotteryNumber}`}</Text>
+                <Text fontSize="18px" style={{ fontWeight: 600 }}>{`Round #${currentLotteryNumber}`}</Text>
               </>
             )}
           </Flex>
@@ -75,10 +75,10 @@ const TotalPrizesCard = () => {
               <PancakeRoundIcon />
             </IconWrapper>
             <PrizeCountWrapper>
-              <Text fontSize="14px" color="textSubtle">
+              <Text fontSize="18px" color="textSubtle">
                 {TranslateString(999, 'Total Pot:')}
               </Text>
-              <Heading size="lg">{lotteryPrizeWithCommaSeparators} CAKE</Heading>
+              <Heading size="lg">{lotteryPrizeWithCommaSeparators} GFT</Heading>
             </PrizeCountWrapper>
           </Left>
           <Right>

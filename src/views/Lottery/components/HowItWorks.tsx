@@ -28,17 +28,23 @@ const HowItWorks = () => {
 
   return (
     <LayoutWrapper>
-      <StyledImage src="/images/pancake-lottery-bunny.png" alt="lottery bunny" width={163} height={140} />
+      <StyledImage src="/images/cat-lottery-ball.png" alt="lottery bunny" width={1127} height={276} />
       <StyledHeading size="lg" as="h3" color="secondary">
         {TranslateString(999, 'How it works')}
       </StyledHeading>
       <Text fontSize="16px">
         {TranslateString(
           999,
-          'Spend CAKE to buy tickets, contributing to the lottery pot. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their exact order!',
+          'Spend GFT to buy tickets, contributing to the lottery pot. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their exact order!',
+        )}
+      </Text><br/>
+      <Text fontSize="15px">
+        {TranslateString(
+          9991,
+          'A % of each lottery gets burned prior to the draw.',
         )}
       </Text>
-      <StyledLink href="https://docs.pancakeswap.finance/lottery-1">Read more</StyledLink>
+      <StyledLink href="https://lucky-financial.gitbook.io/lucky-financial/big-bang-lotter/lottery-overview" target="_blank">Read more</StyledLink>
     </LayoutWrapper>
   )
 }

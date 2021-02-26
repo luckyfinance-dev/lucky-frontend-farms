@@ -11,13 +11,13 @@ const Title = styled(Heading).attrs({ as: 'h1', size: 'xl' })`
 `
 
 const Blurb = styled(Text)`
-  color: #ffffff;
+  color: #373b3e;
   font-size: 20px;
   font-weight: 600;
 `
 
 const StyledHero = styled.div`
-  background-image: linear-gradient(180deg, #53dee9 0%, #1fc7d4 100%);
+  background-image: linear-gradient(180deg, #faea96 0%, #f9efba 100%);
   padding-bottom: 40px;
   padding-top: 40px;
 `
@@ -70,9 +70,10 @@ const Hero = () => {
     <StyledHero>
       <StyledContainer>
         <LeftWrapper>
-          <Title>{TranslateString(999, 'The CAKE Lottery')}</Title>
-          <Blurb>{TranslateString(999, 'Buy tickets with CAKE')}</Blurb>
+          <Title>{TranslateString(999, 'The BIGBANG - Good Fortune Lottery')}</Title>
+          <Blurb>{TranslateString(999, 'Buy tickets with GFT')}</Blurb>
           <Blurb>{TranslateString(999, 'Win if 2, 3, or 4 of your ticket numbers match!')}</Blurb>
+          <Blurb>{TranslateString(999, 'Daily, Monthly and Hearly Big Bangs!')}</Blurb>
         </LeftWrapper>
         <RightWrapper>
           <LotteryProgress />

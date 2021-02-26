@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
-import { Image, Card, CardBody } from '@pancakeswap-libs/uikit'
+import { Image, Card, CardBody, Text } from '@pancakeswap-libs/uikit'
 import { useWinningNumbers, useMatchingRewardLength } from 'hooks/useTickets'
 import useI18n from 'hooks/useI18n'
 import useGetLotteryHasDrawn from 'hooks/useGetLotteryHasDrawn'
@@ -21,6 +21,12 @@ const WinningNumbers: React.FC = () => {
         <CardBody>
           <StyledCardContentInner>
             <StyledCardHeader>
+            <Text fontSize="30px">
+        {TranslateString(
+          999,
+          'DAILY BIG BANG LOTTERY!',
+        )}
+      </Text><br/>
               <Title>
                 {account && lotteryHasDrawn
                   ? `🥳${TranslateString(570, 'Winning Numbers This Round')}🥳`
@@ -44,17 +50,17 @@ const WinningNumbers: React.FC = () => {
               </RabbitBox>
               <RabbitBox>
                 <CardImage style={{ marginLeft: '-1.2em' }}>
-                  <Image src="/images/sign bunny 2@2x.png" alt="Number 2" width={200} height={150} responsive />
+                <Image src="/images/sign bunny 1@2x.png" alt="Number 1" width={200} height={150} responsive />
                 </CardImage>
               </RabbitBox>
               <RabbitBox>
                 <CardImage style={{ marginLeft: '-1.2em' }}>
-                  <Image src="/images/sign bunny 3@2x.png" alt="Number 3" width={200} height={150} responsive />
+                <Image src="/images/sign bunny 1@2x.png" alt="Number 1" width={200} height={150} responsive />
                 </CardImage>
               </RabbitBox>
               <RabbitBox>
                 <CardImage style={{ marginLeft: '-1.2em' }}>
-                  <Image src="/images/sign bunny 4@2x.png" alt="Number 4" width={200} height={150} responsive />
+                <Image src="/images/sign bunny 1@2x.png" alt="Number 1" width={200} height={150} responsive />
                 </CardImage>
               </RabbitBox>
             </RabbitRow>
@@ -123,7 +129,8 @@ const Row = styled.div`
 `
 
 const RabbitRow = styled.div`
-  margin-top: -2.3em;
+  margin-top: -3.01em;
+  margin-left: 1.3em;
   align-items: center;
   display: flex;
   flex-direction: row;
