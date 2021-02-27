@@ -10,11 +10,13 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
     },
+    /** Golden Goose to Binance Pegged BUSD Coin - Pancake Swap LP */
     tokenSymbol: 'GFT',
     tokenAddresses: {
       97: '',
       56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
     },
+    /** Golden Goose Token Address */
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
@@ -26,11 +28,13 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xd1b59d11316e87c3a0a069e80f590ba35cd8d8d3',
     },
+    /** Golden Goose to Binance Pegged  Wrapped BNB Coin - Pancake Swap LP */
     tokenSymbol: 'GFT',
     tokenAddresses: {
       97: '',
       56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
     },
+    /** Golden Goose Token Address */
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
@@ -269,7 +273,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BAKE',
     lpAddresses: {
       97: '',
-      56: '0x4d0228ebeb39f6d2f29ba528e2d15fc9121ead56', // BAKE-BNB LP - EDIT
+      56: '0x4d0228ebeb39f6d2f29ba528e2d15fc9121ead56', // BAKE-BNB LP - NEEDS TO BE EDITED
     },
     tokenSymbol: 'BAKE',
     tokenAddresses: {
@@ -405,12 +409,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'AUTO',
     lpAddresses: {
       97: '',
-      56: '0x4d0228ebeb39f6d2f29ba528e2d15fc9121ead56', // AUTO-BNB LP
+      56: '0x4d0228ebeb39f6d2f29ba528e2d15fc9121ead56', // AUTO-BNB LP - Pancake
     },
     tokenSymbol: 'AUTO',
     tokenAddresses: {
       97: '',
-      56: '0xa184088a740c695e156f91f5cc086a06bb78b827',
+      56: '0xa184088a740c695e156f91f5cc086a06bb78b827', // AUTO Token Address
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
