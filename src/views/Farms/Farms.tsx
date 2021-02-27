@@ -110,7 +110,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   return (
     <Page>
       <Hero>
-        <Heading as="h1" size="xl" color="primary" mb="50px" style={{ textAlign: 'left' }}>
+        <Heading as="h1" size="xl" color="secondary" mb="50px" style={{ textAlign: 'left' }}>
           {tokenMode
             ? TranslateString(10002, 'Stake tokens to earn GFT')
             : TranslateString(320, 'Stake LP tokens to earn GFT')}
