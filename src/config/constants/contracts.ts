@@ -1,13 +1,18 @@
 export default {
   cake: {
-    56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
+    56: '0xb2Ba6fa707948f9A0BC420C35b78e5020A07bc4d',
     97: '',
-    /** Goose Finance Site Token Address - + Contract */
+    /** GFT TOKEN ADDRESS - + Contract */
+  },
+  GFT: {
+    56: '0xb2Ba6fa707948f9A0BC420C35b78e5020A07bc4d',
+    97: '',
+    /** GFT TOKEN ADDRESS - + Contract */
   },
   masterChef: {
-    56: '0xe70E9185F5ea7Ba3C5d63705784D8563017f2E57',
+    56: '0x9D34e58F1792bFa62ABEb08816E10B5B3aB1eac6',
     97: '',
-    /** Goose Finance - MasterChef Contract - Holds Coins */
+    /** Lucky Financial - MasterChef Contract - Holds Coins */
   },
   wbnb: {
     56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
@@ -30,6 +35,7 @@ export default {
     56: '0x1ee38d535d541c55c9dae27b12edf090c608e6fb',
     /** Multicall Contract */
     97: '0x67ADCB4dF3931b0C5Da724058ADC2174a9844412',
+      /** Blank Address */
   },
   busd: {
     56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
