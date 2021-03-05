@@ -16,7 +16,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xb2Ba6fa707948f9A0BC420C35b78e5020A07bc4d',
     },
-    /** Golden Goose Token Address */
+    /** GFT Token Address */
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
