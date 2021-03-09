@@ -37,9 +37,9 @@ const CakeStats = () => {
   const gftSupply = getBalanceNumber(circSupply)
   const marketCap = GFTPrice.times(circSupply)
 
-  let GFTPerBlock = 0
-  if (farms && farms[0] && farms[0].GFTPerBlock) {
-    GFTPerBlock = new BigNumber(farms[0].GFTPerBlock).div(new BigNumber(10).pow(18)).toNumber()
+  let eggPerBlock = 0
+  if (farms && farms[0] && farms[0].eggPerBlock) {
+    eggPerBlock = new BigNumber(farms[0].eggPerBlock).div(new BigNumber(10).pow(18)).toNumber()
   }
 
   return (
@@ -63,7 +63,7 @@ const CakeStats = () => {
         <Row>
           <Text fontSize="18px">{TranslateString(540, 'New GFT/block')}</Text>
           <Text bold fontSize="20px">
-            {GFTPerBlock}
+            {eggPerBlock}
           </Text>
         </Row>
         <CardImage src="/images/gft/gft-gold.png" alt="gft coin logo" width={120} height={100} />
