@@ -8,13 +8,13 @@ const farms: FarmConfig[] = [
     lpSymbol: 'GFT-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
+      56: '0x475f196931247947b25e58b3f2040fb31011897b',
     },
-    /** Golden Goose to Binance Pegged BUSD Coin - Pancake Swap LP - Need To Change */
+    /** GFT to Binance Pegged BUSD Coin - Pancake Swap LP */
     tokenSymbol: 'GFT',
     tokenAddresses: {
       97: '',
-      56: '0xb2Ba6fa707948f9A0BC420C35b78e5020A07bc4d',
+      56: '0x7fd43f967fbe248ff84a2d7bf30a52c9bc1293b9',
     },
     /** GFT Token Address */
     quoteTokenSymbol: QuoteToken.BUSD,
@@ -26,9 +26,9 @@ const farms: FarmConfig[] = [
     lpSymbol: 'GFT-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0xd1b59d11316e87c3a0a069e80f590ba35cd8d8d3',
+      56: '0x7fd43f967fbe248ff84a2d7bf30a52c9bc1293b9',
     },
-    /** Golden Goose to Binance Pegged  Wrapped BNB Coin - Pancake Swap LP - Need To Change */
+    /** GFT Binance Pegged Wrapped BNB Coin - Pancake Swap LP  */
     tokenSymbol: 'GFT',
     tokenAddresses: {
       97: '',
@@ -207,7 +207,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'GFT',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // GFT-BUSD LP
+      56: '0x475f196931247947b25e58b3f2040fb31011897b', // GFT-BUSD LP
     },
     tokenSymbol: 'GFT',
     tokenAddresses: {
@@ -224,7 +224,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BUSD',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // GFT-BUSD LP (BUSD-BUSD will ignore)
+      56: '0x475f196931247947b25e58b3f2040fb31011897b', // GFT-BUSD LP (BUSD-BUSD will ignore)
     },
     tokenSymbol: 'BUSD',
     tokenAddresses: {
