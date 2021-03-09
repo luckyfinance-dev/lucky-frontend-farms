@@ -61,10 +61,10 @@ const config: MenuEntry[] = [
         label: 'CoinMarketCap',
         href: 'https://coinmarketcap.com/currencies/lucky-financial/',
       },
-  //{ To do - update AstroTools Link once Live
-  //      label: 'AstroTools',
-  //      href: 'https://app.astrotools.io/pancake-pair-explorer/',
-  //    },
+  {
+        label: 'AstroTools',
+        href: 'https://app.astrotools.io/pancake-pair-explorer/',
+      },
     ],
   },
   {
