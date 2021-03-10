@@ -12,7 +12,7 @@ export default {
     /** Testnet Address  */
   },
   masterChef: {
-    56: '0x9D34e58F1792bFa62ABEb08816E10B5B3aB1eac6',
+    56: '0x9d34e58f1792bfa62abeb08816e10b5b3ab1eac6',
     /** Lucky Financial - MasterChef Contract - Holds Coins */
     97: '',
     /** Testnet Address  */
